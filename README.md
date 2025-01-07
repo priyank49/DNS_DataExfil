@@ -2,6 +2,7 @@
 This is sample project to extract the data using DNS.
 
 Step 1: Setup EC2 instance on AWS or any cloud where you have control to Linux OS. This machine will be used for listening the DNS query so minimum hardware config will suffice.
+
 #Enable SSH
 sudo ufw allow 53/tcp
 sudo systemctl restart ufw
