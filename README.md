@@ -11,6 +11,8 @@ Simple way to exfiltrate the data from the target machine.
 
 **Step 3:** Update your "Domain name" and "Your data file" in Script.ps1 and run on foothold machine.
 
+![DNSRequestFromFootholdMachine](https://github.com/user-attachments/assets/92499cb1-63e2-438a-b798-872762fbb245)
+
 **Step 4:** Start listening on EC2 and save the output in PCAP file.
 > sudo tcpdump -w dns.pcap -i eth0 port 53 -v
 
@@ -22,6 +24,9 @@ Simple way to exfiltrate the data from the target machine.
 
 **Step 6:** Once the PCAP file is transferred use the python decoder to extract data.
 > python decoder.py
+
+Above script will help to simplify the PCAP and share the data in cleartext.
+![PCAP_Analysis_for_Ref](https://github.com/user-attachments/assets/79531834-a1e4-4501-84f0-3c0f04de61c5)
 
 ![Decoder](https://github.com/user-attachments/assets/f1e6d57e-0ff0-4e1f-bd1e-b5a55a067e55)
 
