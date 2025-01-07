@@ -8,7 +8,7 @@ Simple way to exfiltrate the data from the target machine.
 > sudo systemctl restart ufw
 
 **Step 2:** Start listening and save the PCAP file.
-> sudo tcpdump -w dns.pcap -i eth0 port 53 -v[^1]
+> sudo tcpdump -w dns.pcap -i eth0 port 53 -v
 
 
 ![Listener](https://github.com/user-attachments/assets/fc101f1a-d0ad-4665-8516-ce9977720015)
