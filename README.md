@@ -1,6 +1,5 @@
 # DNS_DataExfil
 Simple way to exfiltrate the data from the target machine.
-_*For Educational purposes only, and any misuse of the techniques is strongly dicouraged._
 
 
 **Step 1:** Setup EC2 instance on AWS or any cloud where you have control to Linux OS. This machine will be used for listening the DNS query so minimum hardware config will suffice. Following is the command for your quick reference to open port 53.
@@ -21,3 +20,6 @@ _*For Educational purposes only, and any misuse of the techniques is strongly di
 > python decoder.py
 
 ![Decoder](https://github.com/user-attachments/assets/f1e6d57e-0ff0-4e1f-bd1e-b5a55a067e55)
+
+
+**Note:**_*For Educational purposes only, and any misuse of the techniques is strongly dicouraged._
