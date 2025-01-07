@@ -9,16 +9,18 @@ Simple way to exfiltrate the data from the target machine.
 
 **Step 2:** Add A record to your domain name to redirect the traffic to your EC2 instance.
 
-**Step 3:** Start listening and save the PCAP file.
+**Step 3:** Update your domain name and path to your file in Script.ps1 and run on target machine.
+
+**Step 4:** Start listening and save the PCAP file.
 > sudo tcpdump -w dns.pcap -i eth0 port 53 -v
 
 
 ![Listener](https://github.com/user-attachments/assets/fc101f1a-d0ad-4665-8516-ce9977720015)
 
-**Step 4:** Transfer file to windows machine to extract details from PCAP file.
+**Step 5:** Transfer file to windows machine to extract details from PCAP file.
 > sudo python3 -m http.server 443
 
-**Step 5:** Once the PCAP file is transferred use the python decoder to extract data.
+**Step 6:** Once the PCAP file is transferred use the python decoder to extract data.
 > python decoder.py
 
 ![Decoder](https://github.com/user-attachments/assets/f1e6d57e-0ff0-4e1f-bd1e-b5a55a067e55)
