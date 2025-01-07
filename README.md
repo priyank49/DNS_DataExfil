@@ -7,11 +7,11 @@ Step 1: Setup EC2 instance on AWS or any cloud where you have control to Linux O
 sudo ufw allow 53/tcp
 sudo systemctl restart ufw
 
-#start listening and save the PCAP file.
+Step 2: Start listening and save the PCAP file.
 sudo tcpdump -w dns.pcap -i eth0 port 53 -v
 
-#Transfer file to windows machine to extract details from PCAP file.
+Step 3: Transfer file to windows machine to extract details from PCAP file.
 sudo python3 -m http.server 443
 
-#once the PCAP file is transferred use the python decoder to extract data.
+Step 4: Once the PCAP file is transferred use the python decoder to extract data.
 python decoder.py
