@@ -9,9 +9,9 @@ Simple way to exfiltrate the data from the target machine.
 
 **Step 2:** Add A record to your domain name to redirect the traffic to your EC2 instance.
 
-**Step 3:** Update your domain name and path to your file in Script.ps1 and run on target machine.
+**Step 3:** Update your "Domain name" and "Your data file" in Script.ps1 and run on foothold machine.
 
-**Step 4:** Start listening and save the PCAP file.
+**Step 4:** Start listening on EC2 and save the output in PCAP file.
 > sudo tcpdump -w dns.pcap -i eth0 port 53 -v
 
 
